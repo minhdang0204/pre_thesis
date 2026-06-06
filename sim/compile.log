@@ -1,0 +1,47 @@
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 21:34:25 on Jun 06,2026
+vlog -sv -f compile.f 
+-- Compiling module cnt_ctrl
+-- Compiling module timer_top
+-- Compiling module apb_slave_wait_state
+-- Compiling module register_module
+-- Compiling module WB
+-- Compiling module ID_EX
+-- Compiling module Mux
+-- Compiling module Instruction_Mem
+-- Compiling module ALU
+-- Compiling module EX_MEM
+-- Compiling module Imm_Gen
+-- Compiling module program_counter
+-- Compiling module register_file
+-- Compiling module riscv_pipeline_top
+-- Compiling module IF_ID
+-- Compiling module ID
+-- Compiling module MEM_WB
+-- Compiling module Forwarding_Unit
+-- Compiling module EX
+-- Compiling module MEM
+-- Compiling module IF
+-- Compiling module ALU_control
+-- Compiling module Control_unit
+-- Compiling module Data_Mem
+-- Compiling module Hazard_Detection_Unit
+-- Compiling module ahb_master
+-- Compiling module top_soc
+-- Compiling module decoder
+-- Compiling module ahb_slave
+-- Compiling module mux_ahb
+-- Compiling interface dut_interface
+-- Compiling package tb_pkg
+-- Compiling package test_pkg
+-- Importing package tb_pkg
+-- Compiling module testbench
+-- Importing package test_pkg
+
+Top level modules:
+	decoder
+	ahb_slave
+	mux_ahb
+	testbench
+End time: 21:34:25 on Jun 06,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

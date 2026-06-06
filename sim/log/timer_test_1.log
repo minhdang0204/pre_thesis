@@ -1,0 +1,79 @@
+# vsim -sv_seed 1 -debugDB -l timer_test_1.log -voptargs="+acc" -assertdebug -c testbench -do " log -r /*;run -all;" "+timer_test" 
+# Start time: 21:34:29 on Jun 06,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dut_interface(fast)
+# Loading work.tb_pkg(fast)
+# Loading work.test_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.dut_interface(fast__2)
+# Loading work.top_soc(fast)
+# Loading work.riscv_pipeline_top(fast)
+# Loading work.IF(fast)
+# Loading work.Mux(fast)
+# Loading work.program_counter(fast)
+# Loading work.Instruction_Mem(fast)
+# Loading work.IF_ID(fast)
+# Loading work.ID(fast)
+# Loading work.Control_unit(fast)
+# Loading work.register_file(fast)
+# Loading work.Imm_Gen(fast)
+# Loading work.Hazard_Detection_Unit(fast)
+# Loading work.ID_EX(fast)
+# Loading work.Forwarding_Unit(fast)
+# Loading work.EX(fast)
+# Loading work.ALU_control(fast)
+# Loading work.ALU(fast)
+# Loading work.EX_MEM(fast)
+# Loading work.MEM(fast)
+# Loading work.Data_Mem(fast)
+# Loading work.MEM_WB(fast)
+# Loading work.WB(fast)
+# Loading work.ahb_master(fast)
+# Loading work.timer_top(fast)
+# Loading work.apb_slave_wait_state(fast)
+# Loading work.register_module(fast)
+# Loading work.cnt_ctrl(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'ImmSrcD'. The port definition is at: ../rtl/cpu/ID.v(34).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/u_top_soc/cpu/u_id File: ../rtl/cpu/riscv_pipeline_top.v Line: 80
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+#  log -r /*
+# run -all
+# [testbench] No testcase selected, defaulting to timer_check
+# 0 [Environment] Build
+# [330000][Scoreboard/Monitor] Received packet: WRITE | Addr=0x40000010 | WData=0x00000000 | irq=0
+# [Scoreboard] CHECK: WRITE to Addr 0x40000010 with Data 0x00000000
+# [390000][Scoreboard/Monitor] Received packet: WRITE | Addr=0x4000000c | WData=0x00000064 | irq=0
+# [Scoreboard] CHECK: WRITE to Addr 0x4000000c with Data 0x00000064
+# [450000][Scoreboard/Monitor] Received packet: WRITE | Addr=0x40000014 | WData=0x00000001 | irq=0
+# [Scoreboard] CHECK: WRITE to Addr 0x40000014 with Data 0x00000001
+# [510000][Scoreboard/Monitor] Received packet: WRITE | Addr=0x40000000 | WData=0x00000001 | irq=0
+# [Scoreboard] CHECK: WRITE to Addr 0x40000000 with Data 0x00000001
+# [1770000][Scoreboard/Monitor] Received packet: WRITE | Addr=0x40000110 | WData=0x00000000 | irq=0
+# [Scoreboard] CHECK: WRITE to Addr 0x40000110 with Data 0x00000000
+# [1830000][Scoreboard/Monitor] Received packet: WRITE | Addr=0x4000010c | WData=0x00000064 | irq=0
+# [Scoreboard] CHECK: WRITE to Addr 0x4000010c with Data 0x00000064
+# [1890000][Scoreboard/Monitor] Received packet: WRITE | Addr=0x40000114 | WData=0x00000001 | irq=0
+# [Scoreboard] CHECK: WRITE to Addr 0x40000114 with Data 0x00000001
+# [1950000][Scoreboard/Monitor] Received packet: WRITE | Addr=0x40000100 | WData=0x00000001 | irq=0
+# [Scoreboard] CHECK: WRITE to Addr 0x40000100 with Data 0x00000001
+# [2510000] Timer IRQ triggered! irq=1
+# [base_test] Test completed.
+# ** Note: $finish    : ../testcases/base_test.sv(24)
+#    Time: 2610 ns  Iteration: 0  Instance: /testbench
+# End time: 21:34:30 on Jun 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
